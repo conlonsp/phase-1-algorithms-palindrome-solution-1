@@ -1,13 +1,27 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  let wordArr = word.split('')
+  let reverseArr = wordArr.reverse()
+  let reverseWord = reverseArr.join('')
+  if(word === reverseWord) {
+    return true
+  } else {
+    return false
+  }
 }
 
 /* 
-  Add your pseudocode here
+  turn the word into an array and assign to a variable
+  reverse the new array and save as a variable
+  turn the reversed array into a string and save as a variable
+    if the input is equal to the reversed string
+      return true
+    else
+      return false
 */
 
 /*
-  Add written explanation of your solution here
+  the string input should be equal to the string if it is spelled backwards
+  or reversed
 */
 
 // You can run `node index.js` to view these console logs
